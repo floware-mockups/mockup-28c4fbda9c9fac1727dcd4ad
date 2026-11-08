@@ -1,0 +1,193 @@
+{
+  "title": "Gestione catalogo prodotti",
+  "description": "Prototipo navigabile per consultare il catalogo, filtrare per nome e categoria e aprire una scheda di dettaglio. Include un riepilogo e un form per aggiungere prodotti.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo del catalogo e accesso rapido alla ricerca dei prodotti.",
+      "metrics": [
+        {
+          "label": "Prodotti a catalogo",
+          "value": "6"
+        },
+        {
+          "label": "Categorie",
+          "value": "4"
+        },
+        {
+          "label": "Prodotti disponibili",
+          "value": "5"
+        },
+        {
+          "label": "In esaurimento",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Nome prodotto",
+        "Categoria",
+        "Stato",
+        "Prezzo"
+      ],
+      "rows": [
+        [
+          "Lumo Quaderno",
+          "Cartoleria",
+          "Disponibile",
+          "€ 8,50"
+        ],
+        [
+          "Vela Lampada",
+          "Illuminazione",
+          "Disponibile",
+          "€ 34,00"
+        ],
+        [
+          "Nubi Tazza",
+          "Casa",
+          "Disponibile",
+          "€ 12,00"
+        ],
+        [
+          "Lumo Astuccio",
+          "Cartoleria",
+          "In esaurimento",
+          "€ 15,00"
+        ],
+        [
+          "Vela Vaso",
+          "Casa",
+          "Disponibile",
+          "€ 22,00"
+        ],
+        [
+          "Nubi Zaino",
+          "Accessori",
+          "Non disponibile",
+          "€ 48,00"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "prodotti",
+      "title": "Prodotti",
+      "description": "Cerca e filtra i prodotti per categoria o stato, quindi seleziona una riga per consultare la scheda dettagliata.",
+      "metrics": [
+        {
+          "label": "Risultati iniziali",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Nome prodotto",
+        "Categoria",
+        "Codice",
+        "Prezzo",
+        "Disponibilità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo Quaderno",
+          "Cartoleria",
+          "LM-QD-01",
+          "€ 8,50",
+          "42",
+          "Disponibile"
+        ],
+        [
+          "Vela Lampada",
+          "Illuminazione",
+          "VL-LP-02",
+          "€ 34,00",
+          "18",
+          "Disponibile"
+        ],
+        [
+          "Nubi Tazza",
+          "Casa",
+          "NB-TZ-03",
+          "€ 12,00",
+          "27",
+          "Disponibile"
+        ],
+        [
+          "Lumo Astuccio",
+          "Cartoleria",
+          "LM-AS-04",
+          "€ 15,00",
+          "4",
+          "In esaurimento"
+        ],
+        [
+          "Vela Vaso",
+          "Casa",
+          "VL-VS-05",
+          "€ 22,00",
+          "11",
+          "Disponibile"
+        ],
+        [
+          "Nubi Zaino",
+          "Accessori",
+          "NB-ZN-06",
+          "€ 48,00",
+          "0",
+          "Non disponibile"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "scheda-prodotto",
+      "title": "Scheda prodotto",
+      "description": "Dettaglio del prodotto selezionato dalla tabella, con informazioni di catalogo e disponibilità.",
+      "metrics": [],
+      "columns": [
+        "Nome prodotto",
+        "Categoria",
+        "Codice",
+        "Prezzo",
+        "Disponibilità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo Quaderno",
+          "Cartoleria",
+          "LM-QD-01",
+          "€ 8,50",
+          "42",
+          "Disponibile"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuovo-prodotto",
+      "title": "Aggiungi prodotto",
+      "description": "Inserisci un prodotto nel catalogo. I filtri di ricerca restano separati dal form di inserimento.",
+      "metrics": [],
+      "columns": [
+        "Nome prodotto",
+        "Categoria",
+        "Codice",
+        "Prezzo",
+        "Disponibilità",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Nome prodotto",
+        "Categoria",
+        "Codice",
+        "Prezzo",
+        "Disponibilità",
+        "Stato"
+      ]
+    }
+  ]
+}
